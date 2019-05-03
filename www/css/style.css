@@ -4,11 +4,23 @@ h2.dash {
 }
 iframe.vid-dash {
 	width: 100%;
-	height: 300px;
 }
 img.img-dash {
 	width: 100%;
 }
-canvas {
-	
+img.acco {
+	width: 100%;
+}
+.accou {
+	background-color: #0288D1;
+}
+h2.tiem {
+	background-color: #FFCA28;
+	border: 1px solid #FFC107;
+}
+h2.tiemp {
+	background-color: #FFCA28;
+	border: 1px solid #FFC107;
+	text-align: center;
+	margin-top: 15px;
 }

@@ -1,43 +1,60 @@
 <ion-view view-title="Juego">
   <ion-content class="juego-io">
-  	<div class="container-juego">
-        <header class="header">     
-            <h1>Juego de memoria.</h1>
-            <h2>Edición 5to Baco "B".</h2>
-        </header>
-
-        <section class="score-panel">
-            <h3>Score Panel</h3>
-            <ul id="star-rating" class="star-rating">
-                <li class="star"><i class="fa fa-star"></i></li>
-                <li class="star"><i class="fa fa-star"></i></li>
-                <li class="star"><i class="fa fa-star"></i></li>
-            </ul>
-            <span class="moves-counter">0</span> Movimientos
-        <div class="timer-container">
-                <span class="timer"><i class="fa fa-hourglass-start"></i> Tiempo: 00:00</span>
-            </div>
-            <div class="reset">
-                <button class="btn reset-btn">Reiniciar<i class="fa fa-repeat"></i></button>
-            </div>
-        </section>
-
-        <!-- Modal -->
-        <section class="win-game-modal">
-            <div id="modal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>¡Felicidades!</h2>
-                    <p>Has ganado el juego y has encontrado los 8 pares de cartas.</p>
-                    <img class="modal-img" src="https://github.com/FoxyStoat/memory-game/blob/master/assets/img/Vault-Boy-Thumb-Up.jpg?raw=true" alt="Vault boy giving the thumbs up from the game fall out">
-                    <button class="btn play-again-btn">¿Juegas de nuevo?</button>
-                </div>
-            </div>
-        </section>
-
-        <ul class="deck"></ul>
+  	 <section class="memory-game">
+    <div class="memory-card" data-framework="apple">
+      <img class="front-face" src="img/a.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
     </div>
+    <div class="memory-card" data-framework="apple">
+      <img class="front-face" src="img/4.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+
+    <div class="memory-card" data-framework="clementine">
+      <img class="front-face" src="img/6.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+    <div class="memory-card" data-framework="clementine">
+      <img class="front-face" src="img/c.png" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+
+    <div class="memory-card" data-framework="grapes">
+      <img class="front-face" src="img/7.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+    <div class="memory-card" data-framework="grapes">
+      <img class="front-face" src="img/d.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+
+    <div class="memory-card" data-framework="watermelon">
+      <img class="front-face" src="img/8.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+    <div class="memory-card" data-framework="watermelon">
+      <img class="front-face" src="img/b.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+
+    <div class="memory-card" data-framework="strawberry">
+      <img class="front-face" src="img/9.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+    <div class="memory-card" data-framework="strawberry">
+      <img class="front-face" src="img/e.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+
+    <div class="memory-card" data-framework="persimmon">
+      <img class="front-face" src="img/11.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+    <div class="memory-card" data-framework="persimmon">
+      <img class="front-face" src="img/k.jpg" alt="" />
+      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+    </div>
+  </section>
 
   </ion-content>
 </ion-view>

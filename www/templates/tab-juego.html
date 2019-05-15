@@ -1,60 +1,92 @@
 <ion-view view-title="Juego">
   <ion-content class="juego-io">
-  	 <section class="memory-game">
-    <div class="memory-card" data-framework="apple">
-      <img class="front-face" src="img/a.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
-    <div class="memory-card" data-framework="apple">
-      <img class="front-face" src="img/4.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
+  	 
+    <div class="container">
+        <!--    HEADER SECTION     -->
+        <header>
+            <h1 class="jue">Juego de Memoria.</h1>
+        </header>
 
-    <div class="memory-card" data-framework="clementine">
-      <img class="front-face" src="img/6.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
-    <div class="memory-card" data-framework="clementine">
-      <img class="front-face" src="img/c.png" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
+        <!--    SCORE PANEL SECTION     -->
+        <section class="score-panel">
+            <!--    STARS     -->
+          <ul class="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
 
-    <div class="memory-card" data-framework="grapes">
-      <img class="front-face" src="img/7.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
-    <div class="memory-card" data-framework="grapes">
-      <img class="front-face" src="img/d.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
+            <!--    MOVES     -->
+            <span class="moves">0</span>
+            <span class="moves-text">Moves</span>
 
-    <div class="memory-card" data-framework="watermelon">
-      <img class="front-face" src="img/8.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
-    <div class="memory-card" data-framework="watermelon">
-      <img class="front-face" src="img/b.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
+            <!--    TIMER     -->
+            <div class="timer">
+                <span class="minCount">00</span>
+                <span class="dots">:</span>
+                <span class="secCount">00</span>
+            </div>
 
-    <div class="memory-card" data-framework="strawberry">
-      <img class="front-face" src="img/9.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
-    <div class="memory-card" data-framework="strawberry">
-      <img class="front-face" src="img/e.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
+            <!--    RESTART BUTTON     -->
+            <div class="restart">
+            <i class="fa fa-repeat"></i>
+            </div>
 
-    <div class="memory-card" data-framework="persimmon">
-      <img class="front-face" src="img/11.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
+            <!--    PAUSE BUTTON     -->
+        </section>
+
+        <!--    CARDS SECTION     -->
+        <ul class="deck">
+            <li class="card">
+                <img class="icon avocado" src="img/6.jpg" alt="avocado">
+            </li>
+            <li class="card">
+                <img class="icon avocado" src="img/6.jpg" alt="avocado">
+            </li>
+            <li class="card">
+                <img class="icon banana" src="img/k.jpg" alt="banana">
+            </li>
+            <li class="card">
+                <img class="icon banana" src="img/k.jpg" alt="banana">
+            </li>
+            <li class="card">
+                <img class="icon cherry" src="https://res.cloudinary.com/jutzee/image/upload/v1538133256/memory-game/cherry.svg" alt="cherry">
+            </li>
+            <li class="card">
+                <img class="icon cherry" src="https://res.cloudinary.com/jutzee/image/upload/v1538133256/memory-game/cherry.svg" alt="cherry">
+            </li>
+            <li class="card">
+                <img class="icon grapes" src="https://res.cloudinary.com/jutzee/image/upload/v1538133256/memory-game/grapes.svg" alt="grapes">
+            </li>
+            <li class="card">
+                <img class="icon grapes" src="https://res.cloudinary.com/jutzee/image/upload/v1538133256/memory-game/grapes.svg" alt="grapes">
+            </li>
+            <li class="card">
+                <img class="icon lemon" src="https://res.cloudinary.com/jutzee/image/upload/v1538133257/memory-game/lemon.svg" alt="lemon">
+            </li>
+            <li class="card">
+                <img class="icon lemon" src="https://res.cloudinary.com/jutzee/image/upload/v1538133257/memory-game/lemon.svg" alt="lemon">
+            </li>
+            <li class="card">
+                <img class="icon plum" src="https://res.cloudinary.com/jutzee/image/upload/v1538133258/memory-game/plum.svg" alt="plum">
+            </li>
+            <li class="card">
+                <img class="icon plum" src="https://res.cloudinary.com/jutzee/image/upload/v1538133258/memory-game/plum.svg" alt="plum">
+            </li>
+            <li class="card">
+                <img class="icon raspberry" src="https://res.cloudinary.com/jutzee/image/upload/v1538133258/memory-game/raspberry.svg" alt="raspberry">
+            </li>
+            <li class="card">
+                <img class="icon raspberry" src="https://res.cloudinary.com/jutzee/image/upload/v1538133258/memory-game/raspberry.svg" alt="raspberry">
+            </li>
+            <li class="card">
+                <img class="icon watermelon" src="https://res.cloudinary.com/jutzee/image/upload/v1538133258/memory-game/watermelon.svg" alt="watermelon">
+            </li>
+            <li class="card">
+                <img class="icon watermelon" src="https://res.cloudinary.com/jutzee/image/upload/v1538133258/memory-game/watermelon.svg" alt="watermelon">
+            </li>
+        </ul>
     </div>
-    <div class="memory-card" data-framework="persimmon">
-      <img class="front-face" src="img/k.jpg" alt="" />
-      <img class="back-face" src="https://github.com/gminova/talk-tool/blob/master/img/card-back.jpg?raw=true" alt="back" />
-    </div>
-  </section>
 
   </ion-content>
 </ion-view>
